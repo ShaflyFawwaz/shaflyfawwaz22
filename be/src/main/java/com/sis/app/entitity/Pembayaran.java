@@ -1,13 +1,25 @@
 package com.sis.app.entitity;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.Data;
+import java.time.LocalDate;
+import java.util.List;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinColumns;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
-import javax.persistence.*;
-import java.time.LocalDate;
-import java.util.List;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import lombok.Data;
 
 @Data
 @Entity
@@ -35,7 +47,7 @@ public class Pembayaran {
 
     @Column(name = "metode_bayar")
     @JsonProperty("metode_bayar")
-    private int metodeBayar;
+    private String metodeBayar;
 
     @OneToMany(fetch = FetchType.EAGER)
     @Fetch(value = FetchMode.SUBSELECT)

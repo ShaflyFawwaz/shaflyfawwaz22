@@ -1,5 +1,11 @@
 <template>
   <v-app>
+      <v-app-bar disable-resize-watcher fixed app :color="$vuetify.theme.themes.dark.primary" dark>
+        <v-toolbar-title>
+          <span class="white--text" >Sistem Informasi Sekolah</span>
+        </v-toolbar-title>
+        <v-spacer></v-spacer>
+      </v-app-bar>
     <v-navigation-drawer disable-resize-watcher fixed app :color="$vuetify.theme.themes.dark.primary" dark>
       <v-list>
         <v-list-item
@@ -35,42 +41,42 @@ export default {
       sideDrawer: false,
       sideMenu: [
         {
-          icon: "mdi-view-dashboard-outline",
+          icon: "mdi-view-dashboard-edit-outline",
           title: "Dashboard",
           to: "/",
         },
         {
-          icon: "mdi-calendar-month-outline",
+          icon: "mdi-calendar-cursor-outline",
           title: "Tahun Ajaran",
           to: "/tahun-ajaran",
         },
         {
-          icon: "mdi-account-school-outline",
+          icon: "mdi-school",
           title: "Siswa",
           to: "/siswa",
         },
         {
-          icon: "mdi-credit-card-outline",
+          icon: "mdi-credit-card-search-outline",
           title: "Pembayaran",
           to: "/pembayaran",
         },
         {
-          icon: "mdi-cash-sync",
+          icon: "mdi-account-cash",
           title: "Transaksi",
           to: "/transaksi",
         },
         {
-          icon: "mdi-receipt-text-outline",
+          icon: "mdi-receipt-text-edit",
           title: "Tagihan SPP",
           to: "/tagihan-spp",
         },
         {
-          icon: "mdi-widgets-outline",
+          icon: "mdi-collage",
           title: "Komponen",
           to: "/komponen",
         },
         {
-          icon: "mdi-list-box-outline",
+          icon: "mdi-format-list-checkbox",
           title: "Tagihan Lain",
           to: "/tagihan-lain",
         },

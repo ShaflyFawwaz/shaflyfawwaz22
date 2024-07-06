@@ -25,7 +25,7 @@
             <v-text-field
                 name="metode_bayar"
                 label="Metode Bayar"
-                type="number"
+                type="text"
                 :rules="rules.metode_bayar"
                 v-model="form.metode_bayar"
             />

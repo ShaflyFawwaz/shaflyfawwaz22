@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-BeApplication<sis>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.sis.BeApplication",
+            "projectName": "sis",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
