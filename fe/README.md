@@ -7,7 +7,7 @@
 ## Installation
 - Clone the repository:
   ```bash
-  git clone https://github.com/Shaflyfawwaz22/sistem-informasi-sekolah.git
+  git clone https://github.com/ShaflyFawwaz/sistem-informasi-sekolah.git
   ```
 
 ## Setup
